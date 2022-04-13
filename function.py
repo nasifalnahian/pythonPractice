@@ -8,11 +8,22 @@
 #     break
 # print(first_exp)
 
-tom_exp_list = [2100,3400,3500]
-joe_exp_list = [200,500,700]
+# tom_exp_list = [2100,3400,3500]
+# joe_exp_list = [200,500,700]
 
-total=0
-for item in tom_exp_list:
-    total=total+item
-    print("tom's total expense;",total)
-    break
+# total=0
+# for item in tom_exp_list:
+#     total=total+item
+#     print("tom's total expense;",total)
+
+def calculate_total(exp):
+    total = 0
+    for item in exp:
+      total = total + item
+    return  total
+tom_exp_list = [2100, 3400, 3500]
+joe_exp_list = [200, 500, 700]
+tom_total= calculate_total(tom_exp_list)
+joes_total = calculate_total(joe_exp_list)
+print("toms total expese:",tom_total)
+print("joes total expese:",joes_total)
